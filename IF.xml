@@ -38,8 +38,18 @@
           </block>
         </statement>
         <value name="IF1">
-          <block type="sensor_object" id="140">
-            <field name="OBJECT">RIGHTFRONT</field>
+          <block type="logic_compare" id="153" inline="true">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="sensor_object" id="154">
+                <field name="OBJECT">RIGHTFRONT</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="155">
+                <field name="NUM">75</field>
+              </block>
+            </value>
           </block>
         </value>
         <statement name="DO1">
